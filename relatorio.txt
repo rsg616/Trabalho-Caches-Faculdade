@@ -1,0 +1,37 @@
+As médias de tempo cache hit and time:
+User 1: [0.0006638014316558838, 0.002001628875732422, 0.0008692526817321777]
+User 2: [0.0019240701198577881, 0.002853848934173584, 0.002905008792877197]
+User 3: [0.0029899537563323974, 0.003029749393463135, 0.00320173978805542]
+
+A quantidade de Cache Miss em cada user:
+User 1: [179, 100, 115]
+User 2: [182, 86, 106]
+User 3: [179, 94, 118]
+
+A quantidade de arquivos que já estavam no cache:
+User 1: [21, 100, 85]
+User 2: [18, 114, 94]
+User 3: [21, 106, 82]
+
+RESULTADOS DA SIMULAÇÃO:
+----------------------------------------
+
+FIFO:
+  Cache Misses   Cache Hits   Tempo Médio
+  179            21           0.0006638014316558838
+  100            100          0.002001628875732422
+  115            85           0.0008692526817321777
+
+LFU:
+  Cache Misses   Cache Hits   Tempo Médio
+  182            18           0.0019240701198577881
+  86             114          0.002853848934173584
+  106            94           0.002905008792877197
+
+LRU:
+  Cache Misses   Cache Hits   Tempo Médio
+  179            21           0.0029899537563323974
+  94             106          0.003029749393463135
+  118            82           0.00320173978805542
+
+Melhor algoritmo de cache: LRU
